@@ -1,6 +1,9 @@
 {
   "name": "dericksportfolio",
   "version": "1.0.0",
+  "dependencies": {
+    "express": "expressjs/express"
+  },
   "description": "A website to show my works.",
   "main": "index.js",
   "scripts": {
