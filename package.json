@@ -2,7 +2,9 @@
   "name": "dericksportfolio",
   "version": "1.0.0",
   "dependencies": {
-    "express": "expressjs/express"
+    "ejs": "^2.6.1",
+    "express": "github:expressjs/express",
+    "node-sass": "^4.9.0"
   },
   "description": "A website to show my works.",
   "main": "index.js",
