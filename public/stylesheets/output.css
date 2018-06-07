@@ -12,6 +12,12 @@
     margin: 0 auto;
   }
 }
+.project-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
    ========================================================================== */
