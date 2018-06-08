@@ -1,3 +1,21 @@
 .project-container {
     @include horizontal-center;
 }
+
+.project {
+    background-color: rgb(122, 187, 224);
+    color: rgb(225, 241, 250);
+}
+
+.project.h2 {
+    color: rgb(15, 53, 82);
+}
+
+.project-bottom {
+    background-color: rgb(225, 241, 250);
+}
+
+.tag.button {
+    border-radius: 25px;
+    $label-radius: 25px;
+}

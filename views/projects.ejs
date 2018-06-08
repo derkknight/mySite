@@ -1,36 +1,67 @@
+<!DOCTYPE html>
 <head>
         <% include ./partials/navbar %>
 </head>
 <body>
-<div class="project-container">
-        <h1>Projects</h1>
-        
-        <div class="card" style="width: 1000px; height: 300px;">
-                <div class="grid-x grid-padding-x">
-                        <div class="cell small-12  grid-x grid-padding-x grid-padding-y">
-                                <img class="cell small-4" style="align-self: center" id="project-image" src="/images/project1.jpg">
-                                <div class="cell small-8">
-                                        <h2><a href="https://www.github.com">Project Title - Coming Soon</a></h2>
-                                        <p id="project-description">Description of the project. Description of the project. Description of the project. Description of the project. Description of the project. Description of the project. Description of the project.</p>
+        <div class="container">
+                <h1>Projects</h1>
+                <p>Sort by</p>
+                <div style="width: 1000px;">
+                        <div class="card" style="width: 850px; height: 350px;">
+                                <div class="project grid-x grid-padding-x">
+                                        <div class="cell small-12  grid-x grid-padding-x grid-padding-y">
+                                                <img class="cell small-4" style="align-self: center" id="project-image" src="/images/project1.jpg">
+                                                <div class="cell small-8">
+                                                        <h2><a href="https://www.github.com">Project Title - Coming Soon</a></h2>
+                                                        <p id="project-description">
+                                                                Description of the project. Description of thcription of the project. Description of the project. Description of the project. Description of the project. Description of the project.
+                                                                Hello how are you doing. Lorem ipsum yada yada yada yada. Description of thcription of the project. Description of thcription of the project. 
+                                                        </p>
+                                                </div>
+                                        </div>
+                                        <div class="project-bottom cell small-12 grid-x">
+                                                <div class="cell small-4">
+                                                        <span class="tag button">Tag 2</span>
+                                                        <span class="tag button">Tag 2</span>
+                                                        <span class="tag button">Tag 2</span>
+                                                        <span class="tag button">Tag 2</span>
+                                                        <span class="tag button">Tag 2</span>
+                                                        <span class="tag button">Tag 2</span>
+                                                        <span class="tag button">Tag 2</span>
+                                                </div>
+                                                <ul id="technology-stack-list" class="menu cell small-8"  style="justify-content: flex-end; padding:10px:">
+                                                        <li>
+                                                                <span data-tooltip title="It has tool tips too dingboi" tabindex="1" data-position="bottom" data-alignment="center">
+                                                                        <img src="/images/python-powered-h.svg" height="50px" width="50px"/>
+                                                                </span>
+                                                        </li>
+                                                        <li>
+                                                                <span data-tooltip title="It has tool tips too dingboi" tabindex="1" data-position="bottom" data-alignment="center">
+                                                                        <img src="/images/python-powered-h.svg" height="50px" width="50px"/>
+                                                                </span>
+                                                        </li>
+                                                        <li>
+                                                                <span data-tooltip title="It has tool tips too dingboi" tabindex="1" data-position="bottom" data-alignment="center">
+                                                                        <img src="/images/python-powered-h.svg" height="50px" width="50px"/>
+                                                                </span>
+                                                        </li>
+                                                        <li>
+                                                                <span data-tooltip title="It has tool tips too dingboi" tabindex="1" data-position="bottom" data-alignment="center">
+                                                                        <img src="/images/python-powered-h.svg" height="50px" width="50px"/>
+                                                                </span>
+                                                        </li>
+                                                        <li>
+                                                                <span data-tooltip title="It has tool tips too dingboi" tabindex="1" data-position="bottom" data-alignment="center">
+                                                                        <img src="/images/python-powered-h.svg" height="50px" width="50px"/>
+                                                                </span>
+                                                        </li>
+                                                </ul>
+                                        </div>
                                 </div>
-                        </div>
-                        <div class="cell small-12 grid-x grid-padding-x">
-                                <div class="cell small-4">
-                                Tags
-                                </div>
-                                <ul id="technology-stack-list" class="menu cell small-8">
-                                        <li>
-                                                <span data-tooltip title="What does this thing do hello man." tabindex="1" data-position="bottom" data-alignment="center">
-                                                        <img src="/images/python-powered-h.svg" height="50px" width="50px"/>
-                                                </span>
-                                        </li>
-                                        <li>
-                                                <img src="/images/python-powered-h.svg" height="50px" width="50px"/>
-                                        </li>
-                                </ul>
                         </div>
                 </div>
         </div>
-</div>
 </body>
 <% include ./partials/foundation %>
+
+</html>

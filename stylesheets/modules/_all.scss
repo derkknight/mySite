@@ -1,3 +1,13 @@
 @import '../../node_modules/foundation-sites/scss/foundation';
+@import '_settings';
 @import '_project';
 @include foundation-everything;
+
+.container {
+    @include horizontal-center;
+    background-color: #FFFFFF;
+}
+
+.menu.a {
+    color: white;
+}

@@ -18,6 +18,23 @@
   transform: translateX(-50%);
 }
 
+.project {
+  background-color: #7abbe0;
+  color: #e1f1fa;
+}
+
+.project.h2 {
+  color: #0f3552;
+}
+
+.project-bottom {
+  background-color: #e1f1fa;
+}
+
+.tag.button {
+  border-radius: 25px;
+}
+
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
    ========================================================================== */
@@ -501,8 +518,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #fefefe;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  background: #e1f1fa;
+  font-family: Libre Franklin, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -2760,7 +2777,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Libre Franklin, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   color: inherit;
@@ -4503,7 +4520,7 @@ a.button:hover, a.button:focus {
   display: none;
   border: 1px solid #cacaca;
   border-radius: 0;
-  background-color: #fefefe;
+  background-color: #e1f1fa;
   font-size: 1rem;
 }
 .dropdown-pane.is-opening {
@@ -6200,7 +6217,7 @@ a.thumbnail image {
 }
 .top-bar,
 .top-bar ul {
-  background-color: #e6e6e6;
+  background-color: #0f3552;
 }
 .top-bar input {
   max-width: 200px;
@@ -6652,6 +6669,16 @@ a.thumbnail image {
   .large-flex-dir-column-reverse {
     flex-direction: column-reverse;
   }
+}
+.container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFFFFF;
+}
+
+.menu.a {
+  color: white;
 }
 
 /*# sourceMappingURL=public/stylesheets/output.css.map */
