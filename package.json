@@ -3,22 +3,16 @@
   "version": "1.0.0",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "github:expressjs/express",
     "foundation-sites": "^6.4.4-rc1",
-    "node-sass": "^4.9.0"
+    "lodash": "^4.17.10"
   },
   "description": "A website to show my works.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass stylesheets/modules/_all.scss public/stylesheets/output.css"
-=======
     "start": "webpack --config webpack.config.js",
     "deploy": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> 590d00c67be5ba17ab6e0ba42856633db0d96dd2
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -31,7 +25,19 @@
   },
   "homepage": "https://github.com/derkknight/mySite#readme",
   "devDependencies": {
+    "css-loader": "^0.28.11",
+    "cssnano": "^3.10.0",
+    "express": "github:expressjs/express",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^2.1.5",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "sugarss": "^1.0.1",
     "webpack": "^4.14.0",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-middleware": "^3.1.3"
   }
 }
