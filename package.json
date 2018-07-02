@@ -9,7 +9,8 @@
   "description": "A website to show my works.",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "webpack --config webpack.config.js",
+    "deploy": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/derkknight/mySite/issues"
   },
-  "homepage": "https://github.com/derkknight/mySite#readme"
+  "homepage": "https://github.com/derkknight/mySite#readme",
+  "devDependencies": {
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8"
+  }
 }
