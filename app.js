@@ -1,4 +1,4 @@
-import 'bootstrap';
+//import 'bootstrap';
 
 
 app.set('view engine', 'ejs');

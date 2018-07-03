@@ -1,5 +1,8 @@
 import _ from 'lodash';
 
+require('../app.js')
+
+
 require('../stylesheets/modules/_all.scss')
 
 function component() {
