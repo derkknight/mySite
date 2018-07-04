@@ -1,14 +1,39 @@
+var LiveReloadPlugin = require('webpack-livereload-plugin');
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin")
+
 
 const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
+
+    entry: './src/index.js',
+    
+    devServer: {
+      port: 3000,
+      open: true,
+      proxy: {
+        "/api": "http://localhost:8080"
+      }
+    },
+
+    output: {
+      filename: 'main.js',
+      path: path.resolve(__dirname, 'dist')
+    },
+
     plugins: [
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, 'dist/index.html')
+
+      }),
+
       new MiniCssExtractPlugin({
         filename: "style.css",
         chunkFilename: "main.css"
-      })
+      }),
+      new LiveReloadPlugin()
 
     ],
     module: {
@@ -23,12 +48,7 @@ module.exports = {
           ],
         }
       ]
-    },
-
-    entry: './app.js',
-    
-    output: {
-      filename: 'main.js',
-      path: path.resolve(__dirname, 'dist')
     }
+
+
   };

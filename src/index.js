@@ -1,10 +1,8 @@
 import _ from 'lodash';
 
-require('../app.js')
-
-
 require('../stylesheets/modules/_all.scss')
 
+/**
 function component() {
     var element = document.createElement('div');
 
@@ -14,3 +12,5 @@ function component() {
 }
 
 document.body.appendChild(component());
+ */
+console.log("hello")
