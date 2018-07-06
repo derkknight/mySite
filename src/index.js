@@ -1,16 +1,9 @@
-import _ from 'lodash';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Navbar from './Navbar.jsx';
 
 require('../stylesheets/modules/_all.scss')
 
-/**
-function component() {
-    var element = document.createElement('div');
 
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ')
-
-    return element;
-}
-
-document.body.appendChild(component());
- */
-console.log("hello")
+const domContainer = document.getElementById('app');
+ReactDOM.render(<Navbar />, domContainer);
