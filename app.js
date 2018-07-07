@@ -1,8 +1,9 @@
 //import 'bootstrap';
-const app = express()
 
 
 const express = require('express')
+const app = express()
+
 
 app.set('view engine', 'ejs');
 
@@ -17,7 +18,9 @@ app.get('/', function (req, res)
 
 app.get('/projects', function (req, res)
 {
-    res.render('projects');    
+    console.log(__dirname)
+    res.sendFile(__dirname + '/dist/projects.html')
+
 });
 
 app.get('/github', function (req, res)
