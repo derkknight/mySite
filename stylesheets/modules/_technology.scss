@@ -1,0 +1,23 @@
+$technology-color: rgb(0,0,0);
+
+.technology-tip-container {
+    position: absolute;
+    margin-top: 10px;
+}
+
+.technology-arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 5%;
+    position: relative;
+    border-bottom: 10px solid $technology-color;
+}
+
+.technology-tip-info {
+    border-radius: 10px;
+    background-color: $technology-color;
+    text-align: center;
+    padding: 15px;
+}

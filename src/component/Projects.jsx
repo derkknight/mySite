@@ -6,9 +6,10 @@ class Projects extends React.Component
     render ()
     {
         return (
-            <div class="project-container">
-            <ProjectCard />
-            </div>
+                <div class="project-container grid-margin-y grid-x">
+                    <ProjectCard />
+                    <ProjectCard />
+                </div>
         );
     }
 }
