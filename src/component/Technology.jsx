@@ -6,7 +6,7 @@ class Technology extends React.Component
     {
 
         return (
-            <div>
+            <div className="technology">
                 <img className="tech-img" height={"50"} width={"50"} src={"./public/images/python-powered-h.svg"}/>
                 <div id="technology-tip-container" className="technology-tip-container">
                     <div className="technology-arrow"/>

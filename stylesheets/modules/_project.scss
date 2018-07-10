@@ -1,16 +1,27 @@
-$window-color: rgb(255,255,255);
+$window-color: rgb(250, 252, 248);
+$window-border: lighten($top-bar-color, 35%); 
 
 .project-container {
     @include horizontal-center;
     padding-top: 25px;
-
 }
 
 .project-card {
     background-color: $window-color;
-    color: rgb(29,31,32);
+    color: rgb(39,69,115);
     padding: 15px;
+    border-color: $window-border;
     border-radius: 7px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.project-card h1 {
+    font-size: 30px;
+    font-weight: 550;
 }
 
 .project-card .cell {
@@ -26,10 +37,22 @@ $window-color: rgb(255,255,255);
 
 
 .project-bottom {
-    background-color: rgb(225, 241, 250);
+    background-color: lighten($theme-2, 10%);
+    padding: 15px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 1px;
+    border-color: $window-border;
+    border-style: solid;
+    border-top: none;
 }
 
 .tag.button {
     border-radius: 25px;
     $label-radius: 25px;
+}
+
+.list {
+    display: inline-flex;
 }

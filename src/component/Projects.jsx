@@ -6,10 +6,13 @@ class Projects extends React.Component
     render ()
     {
         return (
-            <div>
-                <h1>Projects</h1>
-                <p>The following is a list of projects I have done. Click for more details.</p>
-                <div className="project-container grid-margin-y grid-x">
+            <div className="project-container">
+                <div>
+                    <h3>Projects</h3>
+                </div>
+                <div className="grid-margin-y grid-x">
+                    <ProjectCard />
+                    <ProjectCard />
                     <ProjectCard />
                     <ProjectCard />
                 </div>
