@@ -1,8 +1,16 @@
 $technology-color: rgb(0,0,0);
 
+.tech-img:hover + .technology-tip-container {
+    opacity: 1;
+}
+
 .technology-tip-container {
     position: absolute;
     margin-top: 10px;
+    opacity: 0;
+    width: 200px;
+    transition: opacity 0.2s ease;
+    color: $white;
 }
 
 .technology-arrow {
@@ -18,6 +26,23 @@ $technology-color: rgb(0,0,0);
 .technology-tip-info {
     border-radius: 10px;
     background-color: $technology-color;
-    text-align: center;
+    text-align: left;
     padding: 15px;
+    padding-bottom: 5px;
+}
+
+.technology-tip-info p {
+    font-size: 13px;
+}
+
+.technology-tip-heading img{
+    vertical-align: text-top;
+}
+
+.technology-tip-heading p {
+    display: inline-block;
+    padding-left: 11px;
+    font-weight: 550;
+    font-size: 16px;
+    vertical-align: text-top;
 }

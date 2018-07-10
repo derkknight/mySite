@@ -1,14 +1,23 @@
+$window-color: rgb(255,255,255);
+
 .project-container {
     @include horizontal-center;
     padding-top: 25px;
+
 }
 
 .project-card {
-    background-color: rgb(122, 187, 224);
-    color: rgb(225, 241, 250);
+    background-color: $window-color;
+    color: rgb(29,31,32);
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 7px;
 }
+
+.project-card .cell {
+    padding: 10px;
+
+}
+
 
 .project.h2 {
     color: rgb(15, 53, 82);

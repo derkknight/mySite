@@ -62,6 +62,13 @@
 
 @import '../../node_modules/foundation-sites/scss/util/util';
 
+
+$theme-2: rgb(234, 243, 248);
+$top-bar-color: $theme-2;
+$topbar-text: rgb(0, 74, 116);
+$theme-4: rgb(0,0,42);
+$theme-5: rgb(15,54,120);
+
 // 1. Global
 // ---------
 
@@ -80,8 +87,8 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: rgb(252, 253, 241);
-$body-font-color: $black;
+$body-background: $theme-2;
+$body-font-color: rgb(29,31,32);
 $body-font-family: Libre Franklin, Roboto, Arial, sans-serif;
 //$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
@@ -848,7 +855,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: rgb(191, 156, 57);
+$topbar-background: $top-bar-color;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;

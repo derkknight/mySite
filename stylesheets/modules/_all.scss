@@ -4,11 +4,39 @@
 @import '_technology';
 @include foundation-everything;
 
+
 .container {
     @include horizontal-center;
     background-color: #FFFFFF;
 }
 
-.menu.a {
-    color: white;
+.menu  {
+    -webkit-box-shadow: 0 8px 10px -6px #999;
+    -moz-box-shadow: 0 8px 10px -6px #999;
+    box-shadow: 0 8px 10px -6px #999;
+
+    a {
+        color: $topbar-text;
+        font-weight: 600;
+        padding: 30px;
+    }
+
+    .underline {
+        position: relative;
+
+        &::after {
+            position: aboslute;
+            border-bottom: 3px solid $topbar-text;
+            top: calc(100% - #{3px});
+            left: 50%;
+            right: 50%;
+            transition: all 0.5s ease;
+        }
+
+        &:hover::after {
+            left: 0;
+            right: 0;
+            transition: all 0.5s ease;
+        }
+    }
 }

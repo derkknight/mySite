@@ -10,6 +10,8 @@ module.exports = {
 
     entry: './src/index.js',
     
+    mode : 'development',
+
     devServer: {
       port: 3000,
       open: true,
@@ -33,8 +35,7 @@ module.exports = {
       new MiniCssExtractPlugin({
         filename: "style.css",
         chunkFilename: "main.css"
-      }),
-      new LiveReloadPlugin()
+      })
 
     ],
     module: {
