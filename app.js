@@ -16,6 +16,8 @@ app.get('/', function (req, res)
 
 
 
+
+
 app.get('/projects', function (req, res)
 {
     console.log(__dirname)

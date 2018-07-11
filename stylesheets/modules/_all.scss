@@ -4,6 +4,8 @@
 @import '_project';
 @import '_technology';
 @include foundation-everything;
+$padding-left: 300px;
+
 
 
 .container {
@@ -14,11 +16,12 @@
 
 
 .menu  {
+    padding-left: $padding-left;
 
     a {
         color: $topbar-text;
         font-weight: 600;
-        padding: 15px;
+        padding-right: 50px;
     }
 
     .underline {

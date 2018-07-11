@@ -1,6 +1,20 @@
+$window-color: rgb(250, 252, 248);
+$window-border: lighten($top-bar-color, 35%); 
+
+
 .home-container {
+    padding-top: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.home-container .cell{
     padding-top: 25px;
-    justify-content: center;
+}
+
+.profile-top h1 {
+    font-size: 30px;
+    font-weight: 550;
 }
 
 .profile {
@@ -10,9 +24,29 @@
     width: 400px;
 }
 
-.profile-card {
-    margin: 15px;
-    border-radius: 10px;
-    background-color: $topbar-text;
+.profile-top {
+    background-color: lighten($theme-2, 10%);
     padding: 15px;
+    color: rgb(39,69,115);
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-width: 1px;
+    border-color: $window-border;
+    border-style: solid;
+    border-bottom: none;
+}
+
+.profile-card {
+    border-radius: 10px;
+    background-color: $window-color;
+    color: rgb(39,69,115);
+    padding: 15px;
+    border-color: $window-border;
+    border-radius: 7px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: none;
+    border-style: solid;
+    border-width: 1px;
 }

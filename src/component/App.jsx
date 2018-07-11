@@ -26,6 +26,7 @@ class App extends React.Component
                             <ul className="menu underline">
                                 <li><Link to={'/projects'}>Projects</Link></li>
                                 <li><a href="www.github.com" >Github</a></li>
+                                <li><a href="">Experience</a></li>
                                 <li><a href="">Resume</a></li>
                             </ul>
                         </div>
