@@ -117,7 +117,7 @@ var technologies = {
         },
         {
             "id": 6,
-            "title": "Nodejs",
+            "title": "NodeJS",
             "description": "NodeJS was used as a web server."
         },
         {

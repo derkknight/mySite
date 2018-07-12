@@ -3,10 +3,16 @@ import Technology from './Technology.jsx';
 import Keyword from './Keyword.jsx';
 
 
+
+
 class ProjectCard extends React.Component
 {
     render ()
     {
+        var technologyCards = this.props.technologies.map((technology) => {
+            return <Technology title={technology.title} description={technology.description} image={technology.image}/>
+        });
+
         return (
             <div className="cell">
                 <div className="project-card">
@@ -15,10 +21,9 @@ class ProjectCard extends React.Component
                             <img width="400px;" height="250px;" src={"./public/images/project1.jpg"} />
                         </div>
                         <div className="cell medium-8">
-                            <h1>Card Title</h1>
+                            <h1>{this.props.title}</h1>
                             <p>
-                                Tweetivity is an app that uses the Twitter API. It goes through a person's list of followers to see the activity.
-                                Hello. The app was hosted via Flask through Python. The data crunching was done by Pandas.
+                                {this.props.description}
                             </p>
                         </div>
                     </div>
@@ -29,19 +34,12 @@ class ProjectCard extends React.Component
                             <p>Keywords:</p>
                             <div className="menu">
                                 <Keyword />
-                                <Keyword />
-                                <Keyword />
-                                <Keyword />
                             </div>
                         </div>
                         <div className="cell medium-8">
                             <p>Tech Stack:</p>
                             <div className="menu">
-                                <Technology />
-                                <Technology />
-                                <Technology />
-                                <Technology />
-                                <Technology />
+                                {technologyCards}
                             </div>
                         </div>
                     </div>
@@ -50,4 +48,11 @@ class ProjectCard extends React.Component
         );
     }
 }
+
+ProjectCard.defaultProps = {
+    title: "Project Title",
+    description: "Project description here.",
+    technologies: [{"title": "Technology", "description": "."}, {"title": "Technology", "description": "."}]
+}
+
 export default ProjectCard;
