@@ -14,13 +14,13 @@ class ProjectCard extends React.Component
         });
 
         return (
-            <div className="cell">
+            <div className="cell large-8">
                 <div className="project-card">
-                    <div className="grid-x">
-                        <div className="cell medium-4">
+                    <div className="grid-x collapse">
+                        <div className="cell medium-6 large-4">
                             <img width="400px;" height="250px;" src={"./public/images/project1.jpg"} />
                         </div>
-                        <div className="cell medium-8">
+                        <div className="cell medium-6 large-8">
                             <h1>{this.props.title}</h1>
                             <p>
                                 {this.props.description}

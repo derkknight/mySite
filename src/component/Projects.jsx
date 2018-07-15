@@ -130,7 +130,7 @@ class Projects extends React.Component
     {
 
         return (
-            <div className="project-container">
+            <div className="grid-container fluid align-center">
                 <div>
                     <h3>Projects</h3>
                 </div>

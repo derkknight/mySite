@@ -1,11 +1,20 @@
 $window-color: rgb(250, 252, 248);
 $window-border: lighten($top-bar-color, 35%); 
 
+.experience {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.position-title {
+    font-style: italic;
+}
 
 .home-container {
     padding-top: 50px;
-    padding-left: 300px;
-    padding-right: 300px;
+    //padding-left: 300px;
+    //padding-right: 300px;
 }
 
 .home-container .cell{
@@ -20,8 +29,10 @@ $window-border: lighten($top-bar-color, 35%);
 .profile {
     border-radius: 50%;
     border: 10px solid $topbar-text;
-    height: 400px;
-    width: 400px;
+    max-width:400px;
+    max-height:400px;
+    height: auto;
+    width: auto;
 }
 
 .profile-top {

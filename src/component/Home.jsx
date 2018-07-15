@@ -11,13 +11,13 @@ class Projects extends React.Component
         return (
             <div className="home-container">
                 <div className="grid-container fluid">
-                    <div className="grid-x grid-margin-x">
-                        <div className="cell large-4 align-center">
-                            <img className="profile" width="400px;" height="250px;" src={"./public/images/project1.jpg"} />
+                    <div className="grid-x grid-margin-x grid-margin-y align-center">
+                        <div className="shrink cell large-4">
+                            <img className="profile" width="400px;" height="250px;" src={"./public/images/profile.jpg"} />
                         </div>
-                        <div className="cell large-5">
+                        <div className="cell large-6">
                             <ProfileCard title={"About"} content={<AboutMe/>}/>
-                            <ProfileCard title={"Experience"} content={<Experience/>}/>
+                            <ProfileCard title={"Experience Overview"} content={<Experience/>}/>
                             <ProfileCard title={"Contact"} content={<Contact/>}/>
                         </div>
                     </div>
