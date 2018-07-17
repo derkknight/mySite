@@ -7,8 +7,12 @@ $window-border: lighten($top-bar-color, 35%);
     margin: 0;
 }
 
-.position-title {
+.job-time {
+    float: right;
     font-style: italic;
+}
+
+.position-title {
 }
 
 .home-container {

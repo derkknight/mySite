@@ -19,6 +19,12 @@ $window-border: lighten($top-bar-color, 35%);
     border-width: 1px;
 }
 
+.project-card img {
+    border-style: solid;
+    border-width: 1px;
+    border-color: $window-border;
+}
+
 .project-card h1 {
     font-size: 30px;
     font-weight: 550;
