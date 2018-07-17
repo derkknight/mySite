@@ -6,7 +6,7 @@ class Keyword extends React.Component
     {
         return (
             <div className="technology">
-                <button className="button hollow rounded">{this.props.label}</button>
+                <button className="button small hollow keyword">{this.props.label}</button>
             </div>
 
         );

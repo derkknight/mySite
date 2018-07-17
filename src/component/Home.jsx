@@ -3,6 +3,7 @@ import ProfileCard from './ProfileCard.jsx'
 import AboutMe from './ProfileContent/AboutMe.jsx'
 import Contact from './ProfileContent/Contact.jsx'
 import Experience from './ProfileContent/Experience.jsx'
+import Fade from 'react-reveal/Fade'
 
 class Projects extends React.Component
 {
@@ -17,7 +18,9 @@ class Projects extends React.Component
                         </div>
                         <div className="cell large-6">
                             <ProfileCard title={"About"} content={<AboutMe/>}/>
-                            <ProfileCard title={"Experience Overview"} content={<Experience/>}/>
+                            <Fade top>
+                                <ProfileCard title={"Experience Overview"} content={<Experience/>}/>
+                            </Fade>
                             <ProfileCard title={"Contact"} content={<Contact/>}/>
                         </div>
                     </div>

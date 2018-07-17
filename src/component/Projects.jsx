@@ -89,10 +89,11 @@ var projects =
 [
     {
         "title": "Continuous Integration Server",
+        "image": "./public/images/teamcity.jpg",
         "description": "With TeamCity, each project is set up with a hook to be notified whenever a certain branch in GitHub is pushed. Custom scripting is used to build and test the application in a Docker image. If building and testing succeed, the Docker image is deployed.",
         "link": "www.google.com",
         "github": "www.google.com",
-        "keywords": [""],
+        "keywords": ["Dev Ops", "Automation", "Deployment", "Production", "Scripting"],
         "technologies": [technologies[4], technologies[5]]
     },
     {
@@ -100,21 +101,22 @@ var projects =
         "description": "This website was coded in ReactJS developed in the Webpack environment. The Webpack bundler allows smoother development by automatically recompiling and refreshing the website whenever a code change is saved. Sass was used to manage CSS styles using the Foundation framework by Zurb. Icons were provided by Foundation.",
         "link": "www.google.com",
         "github": "www.google.com",
-        "keywords": [""],
+        "keywords": ["Javascript", "HTML", "CSS", "Bundler", "Web Development", "Frontend"],
         "technologies": [technologies[10],technologies[7],technologies[8],technologies[12],technologies[11]]
     },
     {
         "title": "Tweetivity",
+        "image": "./public/images/tweetivity.jpg",
         "description": "Tweetivity is a web app served by the Flask framework. It uses the Twitter API to access a user's followers to scrape the time of their tweets to determine what hours in the day they are the most active. To keep the data relevant, only the followers that are active within the last three weeks are taken account of. The average of how many active users there are in the given hour are then calculated and displayed in a line graph using the D3 library.",
         "link": "www.google.com",
         "github": "www.google.com",
-        "keywords": [""],
+        "keywords": ["Twitter", "Data Science", "Frontend", "Data Visualization" , "Web Application"],
         "technologies": [technologies[0],technologies[9],technologies[1],technologies[2],technologies[3]]
     }
 ]
 
 var projectCards = projects.map((project) => {
-    return <ProjectCard title={project.title} description={project.description} technologies={project.technologies}/>
+    return <ProjectCard title={project.title} image={project.image} description={project.description} technologies={project.technologies} keywords={project.keywords}/>
 }
 );
 
@@ -130,11 +132,11 @@ class Projects extends React.Component
     {
 
         return (
-            <div className="grid-container fluid align-center">
-                <div>
-                    <h3>Projects</h3>
+            <div className="grid-container fluid">
+                <div className="grid-padding-y grid-x align-center">
+                    <h3 className="cell large-8">Projects</h3>
                 </div>
-                <div className="grid-margin-y grid-x">
+                <div className="grid-margin-y grid-x align-center">
                     {projectCards}
                 </div>
             </div>
