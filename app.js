@@ -3,15 +3,17 @@
 
 const express = require('express')
 const app = express()
+const path = require('path');
 
-
-app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/public/files'))
+app.use(express.static(__dirname + '/public/images'))
+app.use(express.static(__dirname + '/dist'))
 
 app.get('/', function (req, res)
 {
-    res.render('index');
+    res.sendFile('index.html');
 });
 
 
@@ -159,22 +161,9 @@ var root = { hello: () => 'Hello world!' };
 
 //
 
-
-app.get('/projects', function (req, res)
-{
-    console.log(__dirname)
-    res.sendFile(__dirname + '/dist/projects.html')
-
-});
-
-app.get('/github', function (req, res)
-{
-    res.send('Projects page');
-});
-
 app.get('/resume', function (req, res)
 {
-    res.send('Resume page');    
+    res.sendFile(path.join("public", "files","DerickYung_Resume.pdf"));
 });
 
 app.listen(3000, () => console.log('Listening on Port 3000'))

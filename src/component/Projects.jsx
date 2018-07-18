@@ -98,6 +98,7 @@ var projects =
     },
     {
         "title": "Portfolio Website",
+        "image": "./public/images/portfolio.jpg",
         "description": "This website was coded in ReactJS developed in the Webpack environment. The Webpack bundler allows smoother development by automatically recompiling and refreshing the website whenever a code change is saved. Sass was used to manage CSS styles using the Foundation framework by Zurb. Icons were provided by Foundation.",
         "link": "www.google.com",
         "github": "www.google.com",

@@ -24,16 +24,20 @@ class App extends React.Component
                     <div className="top-bar">
                         <div className="top-bar-left">
                             <ul className="menu underline">
+                                <li><a href="/">Derick Yung</a></li>
+                            </ul>
+                        </div>
+                        <div className="top-bar-right">
+                            <ul className="menu underline">
                                 <li><Link to={'/projects'}>Projects</Link></li>
-                                <li><a href="www.github.com" >Github</a></li>
-                                <li><a href="">Experience</a></li>
-                                <li><a href="">Resume</a></li>
+                                <li><a href="http://www.github.com/derkknight" >Github</a></li>
+                                <li><a href="./public/files/DerickYung_Resume.pdf">Resume</a></li>
                             </ul>
                         </div>
                     </div>
                     <Switch>
-                        <Route path="/home" component={Home}/>
                         <Route path="/projects" component={Projects}/>
+                        <Route path="/" component={Home}/>
                     </Switch>
                 </div>   
             </Router>

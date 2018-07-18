@@ -12,18 +12,21 @@ $window-border: lighten($top-bar-color, 35%);
     font-style: italic;
 }
 
-.position-title {
+.experience h3 {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .home-container {
     padding-top: 50px;
-    //padding-left: 300px;
-    //padding-right: 300px;
 }
+
 
 .home-container .cell{
     padding-top: 25px;
 }
+
+
 
 .profile-top h1 {
     font-size: 30px;

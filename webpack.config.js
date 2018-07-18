@@ -2,7 +2,7 @@ var LiveReloadPlugin = require('webpack-livereload-plugin');
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production'
 
@@ -29,13 +29,16 @@ module.exports = {
     plugins: [
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, 'dist/index.html')
-
       }),
 
       new MiniCssExtractPlugin({
         filename: "style.css",
         chunkFilename: "main.css"
-      })
+      }),
+
+      new CopyWebpackPlugin([
+        {from:'public', to:'public'}
+      ])
 
     ],
     module: {
@@ -50,14 +53,13 @@ module.exports = {
           ],
         },
         {
-
           test: /\.jsx?/,
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader'
           },
-        },
-      ]
+        }
+      ],
     }
 
 

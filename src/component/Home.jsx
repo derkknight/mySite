@@ -3,9 +3,9 @@ import ProfileCard from './ProfileCard.jsx'
 import AboutMe from './ProfileContent/AboutMe.jsx'
 import Contact from './ProfileContent/Contact.jsx'
 import Experience from './ProfileContent/Experience.jsx'
-import Fade from 'react-reveal/Fade'
+import Skills from './ProfileContent/Skills.jsx'
 
-class Projects extends React.Component
+class Home extends React.Component
 {
     render ()
     {
@@ -18,9 +18,8 @@ class Projects extends React.Component
                         </div>
                         <div className="cell medium-8 large-6">
                             <ProfileCard title={"About"} content={<AboutMe/>}/>
-                            <Fade bottom>
-                                <ProfileCard title={"Experience Overview"} content={<Experience/>}/>
-                            </Fade>
+                            <ProfileCard title={"Experience Overview"} content={<Experience/>}/>
+                            <ProfileCard title={"Skills"} content={<Skills/>}/>
                             <ProfileCard title={"Contact"} content={<Contact/>}/>
                         </div>
                     </div>
@@ -30,4 +29,4 @@ class Projects extends React.Component
         );
     }
 }
-export default Projects;
+export default Home;

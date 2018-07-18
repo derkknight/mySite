@@ -1,9 +1,28 @@
 import React from 'react'
+import Keyword from '../Keyword.jsx'
+
+var technology = [
+    ["AngularJS", "MySQL", ".NET Core", "Dapper", "Bootstrap", "Webpack"],
+    ["C++", "C#", ".NET Framework", "Arduino","HMI"],
+    ["C#", ".NET Framework", "Javascript", "D3", "AngularJS"]
+]
 
 class Experience extends React.Component
 {
     render ()
     {
+        var wegmans_keywords = technology[0].map((keyword) => {
+            return <Keyword label={keyword} />
+        });
+
+        var lm_keywords = technology[1].map((keyword) => {
+            return <Keyword label={keyword} />
+        });
+
+        var philips_keywords = technology[2].map((keyword) => {
+            return <Keyword label={keyword} />
+        });
+
         return (
                 <div>
                     <ul className="experience">
@@ -13,26 +32,35 @@ class Experience extends React.Component
                                 Developer Co-op
                                 <span className="job-time" >May - August 2017</span>
                             </p>
-                            <p>Created a web application to manage the organic farm's inventory and keep track of crop planting progress on the field.</p>
+                            <div className="menu">
+                                {wegmans_keywords}
+                            </div>
                         </li>
+                        <br/>
                         <li>
                             <h3>Lockheed Martin</h3>
                             <p className="position-title">
                                 Technical Co-op
                                 <span className="job-time" >February - July 2016</span>
                             </p>
-                            <p>Research and development of an embedded system control panel to communicate with an aircraft over a network.</p>
+                            <div className="menu">
+                                {lm_keywords}
+                            </div>
                         </li>
+                        <br/>
                         <li>
                             <h3>Philips</h3>
                             <p className="position-title">
                                 Developer Co-op
                                 <span className="job-time" >January - August 2015</span>
                             </p>
-                            <p>Stress tested the servers of the nurse rounds mobile application by sending thousands of messages from a program.</p>
+                            <div className="menu">
+                                {philips_keywords}
+                            </div>
                         </li>
                     </ul>
-                    <p>For more or detailed information, please navigate over to the Experience page.</p>
+                    <br/>
+                    <p>For more information, please take a look at my <a href="">resume</a>.</p>
                 </div>
         );
     }

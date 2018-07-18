@@ -8,7 +8,13 @@ class AboutMe extends React.Component
         return (
                 <div>
                     <p>
-                        I am a Software Engineer (BS) graduate from Rochester Institute of Technology with a MS in Media, Arts, and Technology. I specialize in full-stack development and worked in various companies such Lockheed Martin and Philips.
+                        My name is Derick Yung. I am a Software Engineer that specializes in full-stack development.
+                        I graduated from Rochester Institute of Technology with a BS in Software Engineering and MS in Media, Arts, and Technology.
+                        I have worked in various companies such as Wegmans, Lockheed Martin, and Philips.
+                    </p>
+                    <br/>
+                    <p>
+                        For more information on my works, check out my <a href="/projects">projects!</a>
                     </p>
                 </div>
         );
