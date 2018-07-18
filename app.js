@@ -16,6 +16,12 @@ app.get('/', function (req, res)
     res.sendFile('index.html');
 });
 
+app.get('/projects', function (req, res)
+{
+    res.sendFile(path.join(__dirname, 'dist','index.html'));
+});
+
+
 
 //GraphQL Stuff
 var { graphql, buildSchema } = require('graphql');
@@ -163,7 +169,7 @@ var root = { hello: () => 'Hello world!' };
 
 app.get('/resume', function (req, res)
 {
-    res.sendFile(path.join("public", "files","DerickYung_Resume.pdf"));
+    res.sendFile(path.join(__dirname, "public", "files","DerickYung_Resume.pdf"));
 });
 
 app.listen(3000, () => console.log('Listening on Port 3000'))

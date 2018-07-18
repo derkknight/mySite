@@ -60,7 +60,7 @@ class Experience extends React.Component
                         </li>
                     </ul>
                     <br/>
-                    <p>For more information, please take a look at my <a href="./public/files/DerickYung_Resume.pdf">resume</a>.</p>
+                    <p>For more information, please take a look at my <a href="/resume">resume</a>.</p>
                 </div>
         );
     }
