@@ -8,10 +8,12 @@ COPY package*.json ./
 
 # Node packages
 RUN npm install
+
+COPY . .
+
 #RUN npm run-script build
 RUN npx webpack
 
-COPY . .
 
 # Map Docker daemon
 EXPOSE 3000
