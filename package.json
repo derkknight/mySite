@@ -19,7 +19,7 @@
     "start:dev": "webpack-dev-server --display-modules && npm start",
     "deploy": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
