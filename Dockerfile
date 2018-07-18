@@ -8,8 +8,7 @@ COPY package*.json ./
 
 # Node packages
 RUN npm install
-
-RUN webpack
+RUN npm build
 
 COPY . .
 
