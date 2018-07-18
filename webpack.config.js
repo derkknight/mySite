@@ -8,7 +8,7 @@ const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
 
-    entry: './src/index.js',
+    entry: path.join(__dirname, '/src/index.js'),
     
     mode : 'development',
 
